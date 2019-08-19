@@ -6,35 +6,60 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div>
-      <div class='container'>
-        <p>fsjdhfjasfhjdshajkl</p>
-        <div class="parrallax"</div>
-        <p>fsjdhfjasfhjdshajkl</p>
+    <div class="parallax"</div>
+      <div id="parallaxPadding">
+        <h1 class="header">Ryan Cavanagh</h1>
+        <h2 class='forfontPadding'>I am a second year computer science student at California State University Long Beach.</h2>
+        <div class ='row'>
+          <a href="https://github.com/ryan-w-c" id='gitLink' title="GitHub" alt='GitHub Link' target="_blank"></a>
+          <a href="#projects" id='codeLink' title="Projects" alt='Projects'></a>
+          <a href="#contact" id='mailLink' title="Contact Me" alt='Contact Me'></a>
+        </div>
       </div>
     </div>
-    <div id="alignCenterPadding">
-      <h1 class="header">Ryan Cavanagh</h1>
-      <h2 class='forfont'>I am a second year computer science student at California State University Long Beach.</h2>
+    <div id="alignLeft">
+      <h2 class='proj' id='projects'>Personal Projects</h2>
+    </div>
+    <div class='widthFormat'>
+      <div id='alignCenter'>
+        <h2 class ='forfont' id='pads'>This Website<br>(8/18/19)</h2>
+      </div>
+      <div id="alignLeft">
+        <p class='pad'>I created this website using HTML and CSS. All work, except the GitHub logos, is my own.</p>
+      </div>
+      <div id='alignCenter'>
+        <h2 class ='forfont'>RGB-Image-Generator<br>(8/15/19)</h2>
+      </div>
+      <div id="alignLeft">
+        <p>This program was written in Python, using Kivy and Pil. It reads a user selected image and stores every RGB value from the image. A new one pixel length image is created, using the stored RGB values. The new image is then stretched to the desired output ratio. The screenshot below shows the user's image in the top left and the generated image in the top right.</p>
+        <img src="img/rgbPic.png" alt="Program screenshot" style="width:100%; max-width: 500px; height:auto; margin: auto; display: block;">
+        <p class="links">
+          <a href="https://github.com/ryan-w-c/RGB-Image-Generator" class='outlink' title="View on GitHub" target="_blank">View on GitHub</a>
+          <a href="https://github.com/ryan-w-c/RGB-Image-Generator/releases/download/v1.0.0/RGB-Image_Generator.zip" class='outlink' title="Download Zip">Download Zip (Windows)</a>
+        </p>
+      </div>
+      <div id='alignCenter'>
+        <h2 class ='forfont'>Tic Tac Toe<br>(4/10/19)</h2>
+      </div>
+      <div id="alignLeft">
+        <p>This game was created in Unity and written in C#. It is a basic 3-in-a-row or 5-in-a-row, turn based, tic tac toe game.</p>
+      </div>
+      <div id='alignCenter'>
+        <img src="img/tictactoe.png" alt="Program screenshot" style="width:100%; max-width: 500px; height:auto; margin: auto; display: block;">
+        <p class="links">
+          <a href="https://github.com/ryan-w-c/TicTacToe" class='outlink' title="View on GitHub" target="_blank">View on GitHub</a>
+          <a href="https://ryan-w-c.itch.io/tic-tac-toe" class='outlink' title="Play on itch.io" target="_blank">Play on itch.io</a>
+        </p>
+      </div>
     </div>
     <div id="alignLeft">
-      <h2 class='proj'>Personal Projects</h2>
+      <h2 class='proj'>Contact Me</h2>
     </div>
-    <div id='alignCenter'>
-      <h2 class ='forfont'>RGB-Image-Generator<br>(8/15/19)</h2>
+    <div id='contact'>
+      <h2 class ='forfont' id='alignCenter'>
+        <img src="img/mailWhite.png" style="vertical-align:middle; padding-right: 20px;" alt="Program screenshot">
+        cavanaghryan1@gmail.com
+      </h2>
     </div>
-    <div id="alignLeft">
-      <p>This program was written in Python, using Kivy and Pil. It reads a user selected image and stores ever RGB value from the image. A new one pixel length image is created, using the stored RGB values. The new image is then stretched to the desired output ratio.</p>
-    </div>
-    <div id='alignCenter'>
-      <h2 class ='forfont'>Tic Tac Toe<br>(4/10/19)</h2>
-    </div>
-    <div id="alignLeft">
-      <p>This game was created in Unity and written in C#. It is a basic 3-in-a-row or 5-in-a-row, turn based, tic tac toe game.</p>
-    </div>
-    <div id='alignCenter'>
-      <iframe frameborder="0" src="https://itch.io/embed/393915?border_width=0&amp;bg_color=D3D3D3" width="206" height="165"></iframe>
-    </div>
-    </body>
-  </div>
+  </body>
 </html>

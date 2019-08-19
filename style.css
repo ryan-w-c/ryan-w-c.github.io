@@ -1,65 +1,183 @@
 body{
-  padding: 25;
-  background-color: #34495E;
-  color: lightgray;
-  width: 80%;
-  margin-left:auto;
-  margin-right:auto;
-  max-width: 40%
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  background-color: #292929;
+  color: white;
 }
 
-.container{
-  max-width: 960px;
-  margin: 0 auto;
-  background: #f9f9f9;
-  font-size: 24px;
-  padding: 25px;
+#pads{
+  padding-top: 25px;
 }
 
-.parrallax{
-  background: url('img/bluelines.png') no-repeat center;
+p{
+  font-size: 110%;
+}
+
+p.links{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+p.pad{
+  padding-bottom: 50px;
+}
+
+.outlink:link, .outlink:visited {
+  background-color: #B36B2B;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.outlink:hover, .outlink:active {
+  background-color: #2D3B4F;
+}
+
+.widthFormat{
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 500px;
+}
+
+.parallax{
+  background: url('img/gradient3.png') no-repeat center;
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
-  height: 500px;
+  text-align: center;
+}
+
+
+.row {
+  margin: auto;
+  height: auto;
+  width: 312px;
+  padding-bottom: 40px;
+}
+
+#gitLink{
+  margin: auto;
+  padding-right: 30px;
+  width: 64px;
+  height: 64px;
+  float: left;
+  display: block;
+  background: transparent url('img/githubCatMed.png') center top no-repeat;
+}
+
+#gitLink:hover{
+  background-image: url('img/githubCatMedDark.png');
+}
+
+#codeLink{
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  float: left;
+  width: 64px;
+  height: 64px;
+  display: block;
+  background: transparent url('img/codeWhite.png') center top no-repeat;
+}
+
+#codeLink:hover{
+  background-image: url('img/codeBlack.png');
+}
+
+#mailLink{
+  margin: auto;
+  padding-left: 30px;
+  float: left;
+  width: 64px;
+  height: 64px;
+  display: block;
+  background: transparent url('img/mailWhite.png') center top no-repeat;
+}
+
+#mailLink:hover{
+  background-image: url('img/mailBlack.png');
 }
 
 h1.header{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: lightgray;
-  font-size: 300%
+  font-family: 'Trebuchet MS';
+  font-size: 400%;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 80%;
+}
+
+h2.forfontPadding{
+  font-size: 140%;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 500px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h2.forfont{
-  font-size: 140%
+  font-size: 140%;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h2.proj{
-  padding-bottom: 20px;
-  font-size: 175%
-}
-
-a[target]{
-  color: gray;
-}
-
-a:hover{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 200%;
+  border-left-style: solid;
   color: white;
-  background-color: skyblue;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 10px;
+  border-color: #B36B2B;
+  max-width: 650px;
+}
+
+#RGBScreenshot{
+  background-image: url('img/rgbPic.png') no-repeat center;
+  background-size: fixed;
+  width: 45px;
+  height: 45px;
+}
+
+#githubPadding{
+  padding-top: 5%;
 }
 
 #alignCenterPadding{
   text-align: center;
-  padding-top: 20%;
-  padding-bottom: 10%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 10%;
+  font-family: 'Trebuchet MS';
 }
+
+#parallaxPadding{
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-family: 'Trebuchet MS';
+}
+
 
 #alignCenter{
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS';
 }
 
 #alignLeft{
   text-align: left;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS';
 }
