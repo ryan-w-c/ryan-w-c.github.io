@@ -2,5 +2,6 @@
 First Website
 added tictactoe.html unity html game
 
-complete redesign
+completed redesign
 added RGB-Color-Image Project
+added contact info

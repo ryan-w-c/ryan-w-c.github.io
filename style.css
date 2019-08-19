@@ -20,10 +20,6 @@ p.links{
   padding-bottom: 50px;
 }
 
-p.pad{
-  padding-bottom: 50px;
-}
-
 .outlink:link, .outlink:visited {
   background-color: #B36B2B;
   color: white;
@@ -127,7 +123,7 @@ h2.forfont{
   font-size: 140%;
   margin-left:auto;
   margin-right:auto;
-  max-width: 500px;
+  max-width: 600px;
   padding-left: 20px;
   padding-right: 20px;
 }
