@@ -147,8 +147,7 @@ h2.proj{
 }
 
 #RGBScreenshot{
-  background-image: url('img/rgbPic.png') no-repeat center;
-  background-size: fixed;
+  background-image: url('img/rgbPic.png');
   width: 45px;
   height: 45px;
 }
@@ -172,12 +171,12 @@ h2.proj{
 }
 
 
-#alignCenter{
+.alignCenter{
   text-align: center;
   font-family: 'Trebuchet MS';
 }
 
-#alignLeft{
+.alignLeft{
   text-align: left;
   font-family: 'Trebuchet MS';
 }
