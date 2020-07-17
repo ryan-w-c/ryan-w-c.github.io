@@ -17,6 +17,6 @@
         $body .= "\r\n Message: " . $userMessage;
 
         mail($to, $subject, $body);
-        header("Location: cavanagh.dev?mailsent")
+        header("Location: cavanagh.dev?mailsent");
     }
 ?>
