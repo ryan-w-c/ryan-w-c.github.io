@@ -16,5 +16,6 @@
 
         mail($mailTo, $subject, $body);
         header("Location: index.html");
+        console.log("working");
     }
 ?>
