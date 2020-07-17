@@ -417,7 +417,7 @@
     flex: auto;
   }
   
-  @media screen and (max-width: 1300px), screen and (max-height: 800px) {
+  @media screen and (max-width: 1150px), screen and (max-height: 650px) {
     .main-nav {
       width: 95%;
     }
