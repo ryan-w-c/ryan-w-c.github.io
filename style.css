@@ -1,8 +1,3 @@
-  @font-face {
-    font-family: yoxall;
-    src: url(./fonts/yoxall_b.ttf);
-  }
-
   .formNav {
     grid-column: 1 / span 2;
     max-width: 95%;
