@@ -1,7 +1,5 @@
-
 <?php
-    
-    if (isset($_POST['submit'])){
+    // if (isset($_POST['submit'])){
         $userName 		= $_POST['name'];
         $userEmail	 	= $_POST['email'];
         $userCompany 		= $_POST['company'];
@@ -17,6 +15,5 @@
         $body .= "\r\n Message: " . $userMessage;
 
         mail($to, $subject, $body);
-        header("Location: cavanagh.dev?mailsent");
-    }
+    // }
 ?>
