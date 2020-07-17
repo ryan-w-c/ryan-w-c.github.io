@@ -4,11 +4,10 @@ const link1 = document.getElementById("link-1");
 const link2 = document.getElementById("link-2");
 const pic1 = document.getElementById("pop-card-1");
 const pic2 = document.getElementById("pop-card-2");
-const fname = document.getElementById("name");
-const email = document.getElementById("email");
-const company = document.getElementById("company");
-const message = document.getElementById("message");
-const sendButton = document.getElementById("sendButton");
+// const fname = document.getElementById("name");
+// const email = document.getElementById("email");
+// const company = document.getElementById("company");
+// const message = document.getElementById("message");
 const formNav = document.getElementById("formNav");
 const myNav = document.getElementById("myNav");
 
@@ -83,30 +82,12 @@ function ticTacToe() {
 function contact() {
     formNav.style.width = "100%";
     formNav.scrollTo(0, 0);
-    fname.value = "";
-    email.value = "";
-    company.value = "";
-    message.value = "";
-    sendButton.innerHTML = "";
-    sendButton.append("Send");
+    // fname.value = "";
+    // email.value = "";
+    // company.value = "";
+    // message.value = "";
 }
 
 function closeContact() {
     formNav.style.width = "0%";
-    sendButton.disabled = false;
-    // sendButton.className = "info__link";
-    // sendButton.style.backgroundColor = "#1a1b1c";
-    // sendButton.style.color = "#fafcfe";
   }
-
-  function closeSubmit() {
-    sendButton.innerHTML = "";
-    sendButton.append("Sent");
-    sendButton.disabled = true;
-    // sendButton.style.backgroundColor = "#fafcfe";
-    // sendButton.style.color = "#1a1b1c";
-  }
-
-//   function closeSent() {
-//     document.getElementById("sentNav").style.width = "0%";
-//   }
