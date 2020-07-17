@@ -1,19 +1,20 @@
 <?php
-    // if (isset($_POST['submit'])){
-        $userName 		= $_POST['name'];
-        $userEmail	 	= $_POST['email'];
-        $userCompany 		= $_POST['company'];
-        $userMessage 		= $_POST['message'];
+    if (isset($_POST['submit'])){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $company = $_POST['company'];
+        $message = $_POST['message'];
 
-        $to 			= "cavanaghryan1@gmail.com";
-        $subject 		= "Email from cavanagh.dev";
-        $body 			= "Information Submitted:";
+        $mailTo = "cavanaghryan1@gmail.com";
+        $subject = "Email from cavanagh.dev";
+        $body = "Information Submitted:";
 
-        $body .= "\r\n Name: " . $userName;
-        $body .= "\r\n Email: " . $userEmail;
-        $body .= "\r\n Company: " . $userCompany;
-        $body .= "\r\n Message: " . $userMessage;
+        $body .= "\r\n Name: " . $name;
+        $body .= "\r\n Email: " . $email;
+        $body .= "\r\n Company: " . $company;
+        $body .= "\r\n Message: " . $message;
 
-        mail($to, $subject, $body);
-    // }
+        mail($mailTo, $subject, $body);
+        header("Location: index.html");
+    }
 ?>
