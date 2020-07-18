@@ -10,17 +10,26 @@
       rel="stylesheet"
     />
     <title>Ryan Cavanagh</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150458197-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-150458197-1');
+    </script>
   </head>
   <body>
     <div id="formNav" class="overlay">
       <div class="position">
-        <p class="hamburger" onclick="closeContact()">&times;</p>
+        <button class="hamburger form" tabindex="-1" onclick="closeContact()">&times;</button>
       </div>
       <div class="pop__card">
         <main class="home">
           <section class="formNav">
             <!-- <header class="pop__header"> -->
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0v32k3knKaWmla83uNqRJm0M2bXOs6yHmJxubKuvhLsGISw/viewform?embedded=true" width="640" height="812" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <iframe class="contact form" tabindex="-1" src="https://docs.google.com/forms/d/e/1FAIpQLSf0v32k3knKaWmla83uNqRJm0M2bXOs6yHmJxubKuvhLsGISw/viewform?embedded=true" frameborder="0">Loading…</iframe>
               <!-- <h1 class="info__title">Contact Me</h1>
               <span class="info__spacer"></span>
               <form method="post" action="send.php">
@@ -38,7 +47,7 @@
     </div>
     <div id="myNav" class="overlay">
       <div class="position">
-        <p class="hamburger" onclick="closeNav()">&times;</p>
+        <button tabindex="-1" class="hamburger ham" onclick="closeNav()">&times;</button>
       </div>
         <div class="pop__card">
           <main class="home">
@@ -47,8 +56,8 @@
                 <h1 id="pop-title" class="info__title"></h1>
                 <span class="info__spacer"></span>
                 <p id="pop-subtext" class="info__subtext"></p>
-                <a id="link-1" class="info__link" target="_blank"></a>
-                <a id="link-2" class="info__link" target="_blank">View on Github</a>
+                <a id="link-1" tabindex="-1" class="info__link ham" target="_blank"></a>
+                <a id="link-2" tabindex="-1" class="info__link ham" target="_blank">View on Github</a>
               </header>
             </section>  
             <section class="cards">
@@ -71,13 +80,13 @@
           <p class="info__subtext">
             I'm a third year computer science student at California State University Long Beach. This page contains some of my projects. Click them to see more info.
           </p>
-          <p class="info__link" onclick="contact()">Contact Me</p>
-          <a href="https://github.com/ryan-w-c" class="info__link" target="_blank">Github</a>
+          <div class="info__link start" tabindex="1" onclick="contact()">Contact Me</div>
+          <a href="https://github.com/ryan-w-c" tabindex="1" class="info__link start" target="_blank">Github</a>
         </header>
       </section>
       <section class="cards">
         <div class="group-one">
-          <div class="card card--large zoom" style="background-image: linear-gradient(
+          <div class="card card--large zoom start" tabindex="1" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 74.85%,
@@ -90,7 +99,7 @@
               </h3>
             </header>
           </div>
-          <div class="card card--square zoom"  style="background-image: linear-gradient(
+          <div class="card card--square zoom start" tabindex="1" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 60%,
@@ -103,7 +112,7 @@
               </h3>
             </header>
           </div>
-          <div class="card card--large zoom" style="background-image: linear-gradient(
+          <div class="card card--large zoom start" tabindex="1" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 74.85%,
@@ -111,14 +120,14 @@
              url('img/bingoBoard1.png');"
              onclick="bingoDraw()">
             <header class="card__header">
-                <h3 class="card__title">
-                  <p class="card__link">Bingo Number Draw</p>
-                </h3>
-              </header>
+              <h3 class="card__title">
+                <p class="card__link">Bingo Number Draw</p>
+              </h3>
+            </header>
           </div>
         </div>
         <div class="group-two">
-          <div class="card card--large zoom" style="background-image: linear-gradient(
+          <div class="card card--large zoom start" tabindex="1" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 60%,
@@ -131,7 +140,7 @@
               </h3>
             </header>
           </div>
-          <div class="card card--square zoom" style="background-image: linear-gradient(
+          <div class="card card--square zoom start" tabindex="1" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 60%,

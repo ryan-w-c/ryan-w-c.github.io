@@ -11,16 +11,36 @@ const pic2 = document.getElementById("pop-card-2");
 const formNav = document.getElementById("formNav");
 const myNav = document.getElementById("myNav");
 
+const start = document.getElementsByClassName("start");
+const ham = document.getElementsByClassName("ham");
+const form = document.getElementsByClassName("form");
+
 
 function openNav() {
     myNav.style.width = "100%";
     myNav.scrollTo(0, 0);
     link2.style.visibility = "visible";
     pic1.style.backgroundPosition = "unset";
+    disable(start);
+    enable(ham);
   }
   
+  function disable(item) {
+    for (var i = 0; i < item.length; i++){
+        item[i].tabIndex = "-1";
+    }
+  }
+
+  function enable(item) {
+    for (var i = 0; i < item.length; i++){
+        item[i].tabIndex = "1";
+    }
+  }
+
   function closeNav() {
     myNav.style.width = "0%";
+    disable(ham);
+    enable(start);
   }
 
   function setCards(x, y) {
@@ -86,8 +106,12 @@ function contact() {
     // email.value = "";
     // company.value = "";
     // message.value = "";
+    disable(start);
+    enable(form);
 }
 
 function closeContact() {
     formNav.style.width = "0%";
+    disable(form);
+    enable(start);
   }

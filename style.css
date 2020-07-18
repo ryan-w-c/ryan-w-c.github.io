@@ -2,7 +2,19 @@
     grid-column: 1 / span 2;
     /* max-width: 95%; */
     /* margin: auto; */
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  } 
+
+.contact {
+    width: 640px;
+    height: 875px;
+}
+
+  *:focus {
+    outline: 0 !important;
   }
 
   input[type=text], select, textarea {
@@ -39,7 +51,9 @@
   }
 
   .pop {
-    padding: 90px;
+    padding-bottom: 70px;
+    padding-left: 90px;
+    padding-right: 90px;
     grid-column: 1 / 2;
     display: flex;
     justify-content: center;
@@ -110,8 +124,11 @@
     width: 65px;
     text-align: center;
     align-items: center;
-    font: var(--dark001);
-    background-color: var(--light001);
+    /* font: var(--dark001);
+    background-color: var(--light001); */
+    color: var(--light001);
+    font: var(--light001);
+    background-color: var(--dark001);
     border-radius: 4rem;
     top: 16px; 
     left: 16px;
@@ -124,9 +141,11 @@
     border: 2px solid var(--light001);
   }
 
-  .hamburger:hover {
-    background-color: var(--dark001);
-    color: var(--light001);
+  .hamburger:hover, .hamburger:focus {
+    /* background-color: var(--dark001);
+    color: var(--light001); */
+    color: var(--dark001);
+    background-color: var(--light001);
     /* border: white; */
     /* color: var(--light001); */
   }
@@ -243,7 +262,7 @@
     cursor: pointer;
   }
   
-  .info__link:hover {
+  .info__link:hover, .info__link:focus {
     background-color: var(--light001);
     color: var(--dark001);
   }
@@ -344,7 +363,7 @@
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   
-  .zoom:hover {
+  .zoom:hover, .zoom:focus {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
   }
@@ -379,6 +398,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 2rem;
+    text-align: left;
+    border: none;
   }
   
   .card__profile {
@@ -428,6 +449,7 @@
       grid-column: 1 / span 2;
       max-width: 95%;
       margin: auto;
+      padding-bottom: 0px;
     }
   
     .card--large {
@@ -472,6 +494,10 @@
         padding: 8rem;
       }
 
+    .contact {
+      width: 500px;
+    }
+
   }
 
   @media screen and (max-width: 690px) {
@@ -494,6 +520,11 @@
         color: var(--dark001);
         line-height: 105%;
         margin-bottom: 56px;
+    }
+
+    .contact {
+      width: 270px;
+      height: 990px;
     }
 
   }
