@@ -1,7 +1,5 @@
   .formNav {
     grid-column: 1 / span 2;
-    /* max-width: 95%; */
-    /* margin: auto; */
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 25px;
@@ -9,7 +7,7 @@
   } 
 
 .contact {
-    width: 640px;
+    width: min(50vw, 735px);
     height: 875px;
 }
 
@@ -24,17 +22,15 @@
     color: var(--dark001);
     line-height: 165%;
     margin-bottom: 48px;
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
+    width: 100%;
+    padding: 12px;
     border-radius: 10px;
-    border: 2px solid var(--dark001);    /* border-radius: 4px; Rounded borders */
-    /* box-sizing: border-box; Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    border: 2px solid var(--dark001);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
   }
   
-  /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -58,7 +54,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 16px; */
     max-width: 95vw;
     margin: auto;
   }
@@ -81,7 +76,6 @@
     transition: 0.5s;
     display:flex;
     justify-content:center;
-    /* align-items:center; */
   }
 
   :root {
@@ -109,7 +103,7 @@
   }
   
 .position {
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 16px;
 }
@@ -124,8 +118,6 @@
     width: 65px;
     text-align: center;
     align-items: center;
-    /* font: var(--dark001);
-    background-color: var(--light001); */
     color: var(--light001);
     font: var(--light001);
     background-color: var(--dark001);
@@ -142,12 +134,8 @@
   }
 
   .hamburger:hover, .hamburger:focus {
-    /* background-color: var(--dark001);
-    color: var(--light001); */
     color: var(--dark001);
     background-color: var(--light001);
-    /* border: white; */
-    /* color: var(--light001); */
   }
 
   .main-nav {
@@ -267,13 +255,6 @@
     color: var(--dark001);
   }
   
-  /* .info__link:focus,
-  .info__link:active {
-    background-color: var(--light001);
-    color: var(--dark001);
-    outline: 5px solid var(--red001);
-  } */
-  
   .cards {
     grid-column: 2 / 3;
     display: grid;
@@ -288,51 +269,11 @@
     flex-direction: column;
   }
   
-  /* .group-one .card--square {
-    background-image: linear-gradient(
-        180deg,
-        rgba(26, 27, 28, 0) 50%,
-        rgba(26, 27, 28, 0.2) 74.85%,
-        rgba(26, 27, 28, 0.4) 100%
-      ),
-      url(./images/marques-brownlee.jpg);
-  }
-  
-  .group-one .card--large {
-    background-image: linear-gradient(
-        180deg,
-        rgba(26, 27, 28, 0) 50%,
-        rgba(26, 27, 28, 0.2) 74.85%,
-        rgba(26, 27, 28, 0.4) 100%
-      ),
-      url(./images/tech-me-out.jpg);
-  } */
-  
   .group-two {
     grid-column: 2 / span 1;
     display: flex;
     flex-direction: column;
   }
-  
-  /* .group-two .card--square {
-    background-image: linear-gradient(
-        180deg,
-        rgba(26, 27, 28, 0) 50%,
-        rgba(26, 27, 28, 0.2) 74.85%,
-        rgba(26, 27, 28, 0.4) 100%
-      ),
-      url(./images/peter-mckinnon.jpg);
-  } */
-  
-  /* .group-two .card--large {
-    background-image: linear-gradient(
-        180deg,
-        rgba(26, 27, 28, 0) 50%,
-        rgba(26, 27, 28, 0.2) 74.85%,
-        rgba(26, 27, 28, 0.4) 100%
-      ),
-      url(./images/ijustine.jpg);
-  } */
 
   .close {
       padding-left: 30px;
@@ -371,22 +312,6 @@
   .zoom:hover::after {
       opacity: 1;
   }
-
-  /* .zoom:hover {
-    -ms-transform: scale(1.05); /* IE 9 
-    -webkit-transform: scale(1.05); /* Safari 3-8 
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 0 20px black;
-    transition: transform  0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-
-  .zoom:hover::after {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  } */
   
   .card {
     margin: 16px;
@@ -461,7 +386,7 @@
     .pop--square {
         height: 0;
         /* padding-top: 200%; */
-        padding: 12rem;
+        padding: 17vw;
       }
 
     .card--med {
@@ -479,35 +404,6 @@
 
   }
 
-  @media screen and (max-width: 1045px) {
-    .pop--large,
-    .pop--square {
-        height: 100%;
-        padding: 10rem;
-      }
-
-  }
-  
-  @media screen and (max-width: 835px) {
-    .pop--large,
-    .pop--square {
-        padding: 8rem;
-      }
-
-    .contact {
-      width: 500px;
-    }
-
-  }
-
-  @media screen and (max-width: 690px) {
-    .pop--large,
-    .pop--square {
-        padding: 7rem;
-      }
-
-  }
-  
   @media screen and (max-width: 600px) {
     .group-one,
     .group-two {
@@ -520,11 +416,6 @@
         color: var(--dark001);
         line-height: 105%;
         margin-bottom: 56px;
-    }
-
-    .contact {
-      width: 270px;
-      height: 990px;
     }
 
   }
