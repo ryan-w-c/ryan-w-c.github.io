@@ -22,8 +22,8 @@
   </head>
   <body>
     <div id="formNav" class="overlay">
-      <div class="position">
-        <button class="hamburger form" tabindex="-1" onclick="closeContact()">&times;</button>
+      <div class="position">  
+        <div class="hamburger form" tabindex="-1" onkeyup="clicked(event, this)" onclick="closeContact()">&times;</div>
       </div>
       <div class="pop__card">
         <main class="home">
@@ -47,7 +47,7 @@
     </div>
     <div id="myNav" class="overlay">
       <div class="position">
-        <button tabindex="-1" class="hamburger ham" onclick="closeNav()">&times;</button>
+        <div tabindex="-1" class="hamburger ham" onkeyup="clicked(event, this)" onclick="closeNav()">&times;</div>
       </div>
         <div class="pop__card">
           <main class="home">
@@ -55,6 +55,7 @@
               <header class="pop__header">
                 <h1 id="pop-title" class="info__title"></h1>
                 <span class="info__spacer"></span>
+                <div id="codeInfo"></div>
                 <p id="pop-subtext" class="info__subtext"></p>
                 <a id="link-1" tabindex="-1" class="info__link ham" target="_blank"></a>
                 <a id="link-2" tabindex="-1" class="info__link ham" target="_blank">View on Github</a>
@@ -80,7 +81,7 @@
           <p class="info__subtext">
             I'm a third year computer science student at California State University Long Beach. This page contains some of my projects. Click them to see more info.
           </p>
-          <div class="info__link start" tabindex="1" onclick="contact()">Contact Me</div>
+          <div class="info__link start" onkeyup="clicked(event, this)" tabindex="1" onclick="contact()">Contact Me</div>
           <a href="https://github.com/ryan-w-c" tabindex="1" class="info__link start" target="_blank">Github</a>
         </header>
       </section>
@@ -92,6 +93,7 @@
             rgba(26, 27, 28, 0.2) 74.85%,
             rgb(26, 27, 28) 100%),
              url('img/bingoCard.png');"
+             onkeyup="clicked(event, this)"
              onclick="bingoCard()">
             <header class="card__header">
               <h3 class="card__title">
@@ -105,6 +107,7 @@
             rgba(26, 27, 28, 0.2) 60%,
             rgb(26, 27, 28) 100%),
              url('img/elevator.png');"
+             onkeyup="clicked(event, this)"
              onclick="elevator()">
             <header class="card__header">      
               <h3 class="card__title">
@@ -118,6 +121,7 @@
             rgba(26, 27, 28, 0.2) 74.85%,
             rgb(26, 27, 28) 100%),
              url('img/bingoBoard1.png');"
+             onkeyup="clicked(event, this)"
              onclick="bingoDraw()">
             <header class="card__header">
               <h3 class="card__title">
@@ -133,6 +137,7 @@
             rgba(26, 27, 28, 0.2) 60%,
             rgb(26, 27, 28) 100%),
              url('img/rgbEx.png');"
+             onkeyup="clicked(event, this)"
              onclick="rgb()">
             <header class="card__header">
               <h3 class="card__title">
@@ -146,6 +151,7 @@
             rgba(26, 27, 28, 0.2) 60%,
             rgb(26, 27, 28) 100%),
              url('img/tictactoe.png');"
+             onkeyup="clicked(event, this)"
              onclick="ticTacToe()">
             <header class="card__header">
               <h3 class="card__title">
