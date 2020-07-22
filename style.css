@@ -35,22 +35,6 @@
     outline: 0 !important;
   }
 
-  /* input[type=text], select, textarea {
-    font-family: Open Sans, sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    color: var(--dark001);
-    line-height: 165%;
-    margin-bottom: 48px;
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 2px solid var(--dark001);
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-  } */
-  
   .container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -157,44 +141,6 @@
     color: var(--dark001);
     background-color: var(--light001);
   }
-
-  /* .main-nav {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 40%;
-    background-color: var(--dark001);
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-    z-index: 5;
-  }
-  
-  .main-nav--active {
-    transform: translateX(0);
-  }
-  
-  .main-nav__link {
-    font-family: yoxall, sans-serif;
-    font-size: 3rem;
-    padding: 12px 0;
-    margin: 16px;
-    color: var(--light001);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.3s ease;
-  }
-  
-  .main-nav__link:hover {
-    border-bottom: 1px solid var(--light001);
-  }
-  
-  .main-nav__link a:focus,
-  .main-nav__link a:active {
-    outline: 5px solid var(--red001);
-  } */
   
   .home {
     height: 100%;
@@ -387,6 +333,11 @@
     .main-nav {
       width: 95%;
     }
+
+    .pop {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   
     .info,
     .cards,
@@ -405,8 +356,7 @@
     .pop--large,
     .pop--square {
         height: 0;
-        /* padding-top: 200%; */
-        padding: 17vw;
+        padding: 16vw;
       }
 
     .card--med {
@@ -437,6 +387,12 @@
         line-height: 105%;
         margin-bottom: 56px;
     }
+
+    .pop--large,
+    .pop--square {
+        height: 0;
+        padding: 33vw;
+      }
 
   }
   
