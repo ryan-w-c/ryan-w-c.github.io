@@ -119,7 +119,7 @@ function ticTacToe() {
     openNav();
     setCards('url(img/tic2.png)', 'url(img/tic1.png)');
     pic1.style.backgroundPosition = "center";
-    setLinks("https://ryan-w-c.itch.io/tic-tac-toe", "https://github.com/ryan-w-c/TicTacToe", "Play Now");
+    setLinks("https://cavanagh.dev/TicTacToe", "https://github.com/ryan-w-c/TicTacToe", "Play Now");
     setText("Tic-Tac-Toe", "This game is a basic 3-in-a-row or 5-in-a-row, turn based, tic-tac-toe game.");
     createInfo("C#");
     createInfo("Unity Game Engine");
