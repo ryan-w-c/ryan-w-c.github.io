@@ -14,43 +14,30 @@
   </head>
   <body>
     <div id="formNav" class="overlay">
-      <div class="position">  
-        <div class="hamburger form" tabindex="-1" onkeyup="clicked(event, this)" onclick="closeContact()">&times;</div>
+      <div class="position">
+        <p class="hamburger" onclick="closeContact()">&times;</p>
       </div>
-      <div class="pop__card">
+      <div id="formCard" class="pop__card">
         <main class="home">
           <section class="formNav">
-            <!-- <header class="pop__header"> -->
               <iframe class="contact form" tabindex="-1" src="https://docs.google.com/forms/d/e/1FAIpQLSf0v32k3knKaWmla83uNqRJm0M2bXOs6yHmJxubKuvhLsGISw/viewform?embedded=true" frameborder="0">Loading…</iframe>
-              <!-- <h1 class="info__title">Contact Me</h1>
-              <span class="info__spacer"></span>
-              <form method="post" action="send.php">
-                <input type="text" id="name" name="name" placeholder="Full Name">
-                <input type="text" id="email" name="email" placeholder="Email Address">
-                <input type="text" id="company" name="company" placeholder="Company">
-                <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-                <input id="sendButton" type="submit" name="submit" class="info__link" value="Send">
-              </form> -->
-              <!-- <p class="close" onclick="closeContact()">Close</p> -->
-            <!-- </header> -->
           </section>  
         </main>
       </div>
     </div>
     <div id="myNav" class="overlay">
       <div class="position">
-        <div tabindex="-1" class="hamburger ham" onkeyup="clicked(event, this)" onclick="closeNav()">&times;</div>
+        <p class="hamburger" onclick="closeNav()">&times;</p>
       </div>
-        <div class="pop__card">
-          <main class="home">
+        <div id="infoCard" class="pop__card">
+          <main class="homegrid">
             <section class="pop">
               <header class="pop__header">
                 <h1 id="pop-title" class="info__title"></h1>
                 <span class="info__spacer"></span>
-                <div id="codeInfo"></div>
                 <p id="pop-subtext" class="info__subtext"></p>
-                <a id="link-1" tabindex="-1" class="info__link ham" target="_blank"></a>
-                <a id="link-2" tabindex="-1" class="info__link ham" target="_blank">View on Github</a>
+                <a id="link-1" class="info__link" target="_blank"></a>
+                <a id="link-2" class="info__link" target="_blank">View on Github</a>
               </header>
             </section>  
             <section class="cards">
@@ -64,28 +51,175 @@
           </main>
         </div>
     </div>
-    <main class="home">
-      <section class="info">
+    <!-- <main class="home"> -->
+      <section class="maininfo">
         <header class="info__header">
-          <h1 class="info__title">Ryan Cavanagh</h1>
+          <h1 class="name__title">Ryan Cavanagh</h1>
           <span class="info__spacer"></span>
-          <h3 class="info__greet">Hi,</h3>
+          <section class="img__sec">
+            <img class="info__img" src="img/mail_dark.png" onclick="contact()"/>
+            <a href="https://github.com/ryan-w-c" target="_blank"><img class="info__img" src="img/GitHub-Mark-120px-plus.png"></a>
+            <a href="https://www.linkedin.com/in/ryan-cavanagh/" target="_blank"><img class="info__img" src="img/LI-In-Bug.png"></a>
+          </section>
+          <span class="info__spacer"></span>
+
+          <h3 class="info__greet">Experience</h3>
+
+          <p class="job__co">American Express</p>
+          <p class="job__title">Software Engineer Intern</p>
+          <p class="time__frame">Jun 2021 - Aug 2021</p>
+          <!-- <ul class="job__desc">
+            <li>Improved build times 80% by converting a Java repo from Maven to Gradle.</li>
+            <li>Built, deployed, and presented new API to help developers access Elasticsearch data more securely and faster.</li>
+          </ul> -->
+
+          <p class="job__co">California State University Long Beach</p>
+          <p class="job__title">Research Assistant (Machine Learning)</p>
+          <p class="time__frame">Jan 2021 - Present</p>
+
+          <!-- <ul class="job__desc">
+            <li>Composed CNN, RNN, and ensemble models to predict gait cycles from test individuals.</li>
+            <li>Paper pending review.</li>
+          </ul> -->
+          <p class="job__title">Research Assistant (Robotics)</p>
+          <p class="time__frame">Nov 2019 - Present</p>
+
+          <!-- <ul class="job__desc">
+            <li>Collaborated with The Aerospace Corporation in developing robotics software.</li>
+            <li>Incorporated object recognition packages for robotic autonomy in the system. </li>
+          </ul> -->
+
+          <span class="info__spacer"></span>
+
+          <h3 class="info__greet">Publications</h3>
           <p class="info__subtext">
-            I'm a fourth year computer science student at California State University Long Beach. This page contains some of my projects. Click them to see more info.
-          </p>
-          <div class="info__link start" onkeyup="clicked(event, this)" tabindex="1" onclick="contact()">Contact Me</div>
-          <a href="https://github.com/ryan-w-c" tabindex="1" class="info__link start" target="_blank">Github</a>
+            Cavanagh, R. and Trajkovic, J., “Simulation Environment for Modeling and Testing of Autonomous Assembly in Space for Multiple Robotic Arms,” SAE Technical Paper 2022-01-0012, 2022, <a href="https://doi.org/10.4271/2022-01-0012" target="_blank">doi:10.4271/2022-01-0012</a>.</p>
+          <span class="info__spacer"></span>
+
+          <h3 class="info__greet">Projects</h3>
+          <section class="cards">
+            <div class="group-one">
+
+              <div class="card card--large zoom"  style="background-image: linear-gradient(
+                180deg,
+                rgba(26, 27, 28, 0) 50%,
+                rgba(26, 27, 28, 0.2) 60%,
+                rgb(26, 27, 28) 100%),
+                 url('img/elevator.png');"
+                 onclick="elevator()">
+                <header class="card__header">      
+                  <h3 class="card__title">
+                    <p class="card__link">Elevator Simulator</p>
+                  </h3>
+                </header>
+              </div>
+
+              <div class="card card--square zoom" style="background-image: linear-gradient(
+                180deg,
+                rgba(26, 27, 28, 0) 50%,
+                rgba(26, 27, 28, 0.2) 60%,
+                rgb(26, 27, 28) 100%),
+                 url('img/crypto1.png');"
+                 onclick="crypto()">
+                <header class="card__header">
+                  <h3 class="card__title">
+                    <p class="card__link">Crypto Prices API Webapp</p>
+                  </h3>
+                </header>
+              </div>
+
+              <div class="card card--large zoom" style="background-image: linear-gradient(
+                180deg,
+                rgba(26, 27, 28, 0) 50%,
+                rgba(26, 27, 28, 0.2) 60%,
+                rgb(26, 27, 28) 100%),
+                 url('img/cal2.png');"
+                 onclick="cal()">
+                <header class="card__header">
+                  <h3 class="card__title">
+                    <p class="card__link">MacOS Meeting Launcher</p>
+                  </h3>
+                </header>
+              </div>
+
+            </div>
+            <div class="group-two">
+
+
+              <div class="card card--large zoom" style="background-image: linear-gradient(
+                180deg,
+                rgba(26, 27, 28, 0) 50%,
+                rgba(26, 27, 28, 0.2) 60%,
+                rgb(26, 27, 28) 100%),
+                 url('img/chess2.png');"
+                 onclick="chess()">
+                <header class="card__header">
+                    <h3 class="card__title">
+                      <p class="card__link">Chess</p>
+                    </h3>
+                  </header>
+              </div>
+
+              <div class="card card--square zoom" style="background-image: linear-gradient(
+                180deg,
+                rgba(26, 27, 28, 0.1) 10%,
+                rgba(26, 27, 28, 0.2) 60%,
+                rgb(26, 27, 28) 100%),
+                 url('img/hugMeCampus2.png');"
+                 onclick="hugMe()">
+                <header class="card__header">
+                  <h3 class="card__title">
+                    <p class="card__link">HugMe Campus Android Application</p>
+                  </h3>
+                </header>
+              </div>
+
+            </div>
+          </section>
+          <span class="info__spacer"></span>
+
+          <h3 class="info__greet">Resume</h3>
+          </header>
+          </section>
+          <!-- </main> -->
+          <!-- <section class="link__sec">
+            <a href="https://github.com/ryan-w-c" class="info__link">Research</a>
+            <a href="#proj" class="info__link">Projects</a>
+            <a href="#res" class="info__link">Resume</a>
+          </section>
+          <section class="img__sec">
+            <img class="info__img" src="img/mail_dark.png" onclick="contact()"/>
+            <a href="https://github.com/ryan-w-c" target="_blank">
+              <img class="info__img" src="img/GitHub-Mark-120px-plus.png">
+            </a>
+            <a href="https://www.linkedin.com/in/ryan-cavanagh/" target="_blank">
+              <img class="info__img" src="img/LI-In-Bug.png">
+            </a>
+          </section>
         </header>
       </section>
+      <a id="down" href="#proj"><span></span></a>
+    </main> 
+
+      <main class="homegrid" id="proj">
+          <section class="info">
+            <header class="info__header">
+              <h1 class="info__title">Projects</h1>
+              <span class="info__spacer"></span>
+              <p class="info__subtext">
+                I'm a fourth year computer science student at California State University Long Beach. 
+              </p>
+              <a href="https://github.com/ryan-w-c" class="info__link" target="_blank">Github</a>
+            </header>
+          </section>
       <section class="cards">
         <div class="group-one">
-          <div class="card card--large zoom start" tabindex="1" style="background-image: linear-gradient(
+          <div class="card card--large zoom" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 74.85%,
             rgb(26, 27, 28) 100%),
              url('img/bingoCard.png');"
-             onkeyup="clicked(event, this)"
              onclick="bingoCard()">
             <header class="card__header">
               <h3 class="card__title">
@@ -93,13 +227,12 @@
               </h3>
             </header>
           </div>
-          <div class="card card--square zoom start" tabindex="1" style="background-image: linear-gradient(
+          <div class="card card--square zoom"  style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 60%,
             rgb(26, 27, 28) 100%),
              url('img/elevator.png');"
-             onkeyup="clicked(event, this)"
              onclick="elevator()">
             <header class="card__header">      
               <h3 class="card__title">
@@ -107,29 +240,27 @@
               </h3>
             </header>
           </div>
-          <div class="card card--large zoom start" tabindex="1" style="background-image: linear-gradient(
+          <div class="card card--large zoom" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 74.85%,
             rgb(26, 27, 28) 100%),
              url('img/bingoBoard1.png');"
-             onkeyup="clicked(event, this)"
              onclick="bingoDraw()">
             <header class="card__header">
-              <h3 class="card__title">
-                <p class="card__link">Bingo Number Draw</p>
-              </h3>
-            </header>
+                <h3 class="card__title">
+                  <p class="card__link">Bingo Number Draw</p>
+                </h3>
+              </header>
           </div>
         </div>
         <div class="group-two">
-          <div class="card card--large zoom start" tabindex="1" style="background-image: linear-gradient(
+          <div class="card card--large zoom" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 60%,
             rgb(26, 27, 28) 100%),
              url('img/rgbEx.png');"
-             onkeyup="clicked(event, this)"
              onclick="rgb()">
             <header class="card__header">
               <h3 class="card__title">
@@ -137,13 +268,12 @@
               </h3>
             </header>
           </div>
-          <div class="card card--square zoom start" tabindex="1" style="background-image: linear-gradient(
+          <div class="card card--square zoom" style="background-image: linear-gradient(
             180deg,
             rgba(26, 27, 28, 0) 50%,
             rgba(26, 27, 28, 0.2) 60%,
             rgb(26, 27, 28) 100%),
              url('img/tictactoe.png');"
-             onkeyup="clicked(event, this)"
              onclick="ticTacToe()">
             <header class="card__header">
               <h3 class="card__title">
@@ -153,7 +283,16 @@
           </div>
         </div>
       </section>
-    </main>
+      <a id="down" href="#res"><span></span></a>
+      <a href="#res"><span></span></a>
+      </main>
+
+      <main class="homenogrid" id="res">
+      </main> -->
+      <main class="home" id="res">
+          
+        <embed src="img/RyanCavanaghResume.pdf" width="100%" height="100%">
+      </main>
     <script type="text/javascript" src="./functions.js"></script>
   </body>
 </html>
