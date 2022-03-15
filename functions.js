@@ -9,8 +9,6 @@ const myNav = document.getElementById("myNav");
 
 var hash = window.location.hash;
 
-print(hash)
-
 if (hash == "#hugMeCampus") {
     hugMe();
 }
