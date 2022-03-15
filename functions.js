@@ -7,6 +7,12 @@ const pic2 = document.getElementById("pop-card-2");
 const formNav = document.getElementById("formNav");
 const myNav = document.getElementById("myNav");
 
+var hash = window.location.hash;
+
+if (hash === "#hugMeCampus") {
+    hugMe();
+}
+
 function openNav() {
     myNav.style.width = "100%";
     myNav.scrollTo(0, 0);
